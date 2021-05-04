@@ -1,8 +1,36 @@
 {
-  "name": "nodejs-typeorm-overview",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/nadalmateus/nodejs-typeorm-overview.git",
-  "author": "Mateus Nadal <nadalmateus@outlook.com>",
-  "license": "MIT"
+  "name": "node-orm-overview",
+  "version": "0.0.1",
+  "description": "Awesome project developed with TypeORM.",
+  "scripts": {
+    "lint": "eslint \"src/**/*\" --fix",
+    "commit": "cz",
+    "dev": "ts-node-dev --files --transpile-only --ignore-watch node_modules --respawn --no-notify src/server.ts",
+    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "reflect-metadata": "^0.1.10",
+    "ts-node-dev": "^1.1.6",
+    "typeorm": "0.2.32"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/node": "^8.0.29",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "^7.25.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "ts-node": "3.3.0",
+    "typescript": "3.3.3333"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
