@@ -1,16 +1,16 @@
 import { Column, CreateDateColumn, Entity, PrimaryColumn } from 'typeorm'
 import { v4 as uuidV4 } from 'uuid'
 
-@Entity('class')
-class Class {
+@Entity('leasson')
+class Leasson {
   @PrimaryColumn()
   id: string;
 
   @Column()
-  name: string;
+  idClass: string;
 
   @Column()
-  duration: string;
+  description: string;
 
   @CreateDateColumn()
   created_at: Date;
@@ -25,4 +25,4 @@ class Class {
   }
 }
 
-export { Class }
+export { Leasson }

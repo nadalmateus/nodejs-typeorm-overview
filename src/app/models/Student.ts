@@ -1,8 +1,8 @@
 import { Column, CreateDateColumn, Entity, PrimaryColumn } from 'typeorm'
 import { v4 as uuidV4 } from 'uuid'
 
-@Entity('class')
-class Class {
+@Entity('student')
+class Student {
   @PrimaryColumn()
   id: string;
 
@@ -10,7 +10,7 @@ class Class {
   name: string;
 
   @Column()
-  duration: string;
+  key: string;
 
   @CreateDateColumn()
   created_at: Date;
@@ -25,4 +25,4 @@ class Class {
   }
 }
 
-export { Class }
+export { Student }
