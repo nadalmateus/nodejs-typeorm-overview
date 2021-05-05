@@ -1,5 +1,5 @@
 import app from './app'
 import 'reflect-metadata'
-import './database'
+import './database/databaseConnection'
 
-app.listen(3000, () => console.log('Running Server'))
+app.listen(3000, () => console.log('[ON] Running Server'))

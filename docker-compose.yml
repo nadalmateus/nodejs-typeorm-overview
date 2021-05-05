@@ -1,11 +1,11 @@
 version: "3.9"
 
 services:
-  database: 
+  database:
     image: postgres
-    container_name: TypeORM
+    container_name: ORM
     restart: always
-    ports: 
+    ports:
       - 5432:5432
     environment:
       - POSTGRES_USER=docker

@@ -5,9 +5,9 @@
 	"username": "docker",
 	"password": "docker",
 	"database": "ORM",
-	"entities": [
-		"src/app/models/*.ts"
-	],
+  "entities": [
+    "src/app/models/*.ts"
+  ],
 	"migrations": [
 		"src/database/migrations/*.ts"
 	],
