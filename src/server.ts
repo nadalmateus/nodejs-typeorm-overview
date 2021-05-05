@@ -1,5 +1,5 @@
-import express from 'express'
+import app from './app'
+import 'reflect-metadata'
+import './database'
 
-const app = express()
-
-app.listen(3333)
+app.listen(3000, () => console.log('Running Server'))
